@@ -1,0 +1,13 @@
+@model EventTracker.Models.EventModel
+
+<h2>Event Details</h2>
+
+<div>
+    <h4>@Model.Title</h4>
+    <p>@Model.Id</p>
+    <p>@Model.Description</p>
+    <p>Tarih: @Model.Date.ToShortDateString()</p>
+    
+</div>
+
+<a href="@Url.Action("List")" class="btn btn-secondary">Go Back</a>
